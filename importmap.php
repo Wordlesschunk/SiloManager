@@ -16,4 +16,11 @@ return [
         'path' => './assets/app.js',
         'entrypoint' => true,
     ],
+    'tuicss' => [
+        'version' => '2.1.2',
+    ],
+    'tuicss/dist/tuicss.min.css' => [
+        'version' => '2.1.2',
+        'type' => 'css',
+    ],
 ];

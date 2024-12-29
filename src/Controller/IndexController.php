@@ -42,4 +42,12 @@ class IndexController extends AbstractController
         ]);
     }
     
+    #[Route('/tui', name: 'app_render_menu_tui')]
+    public function renderTui(): Response
+    {
+        return $this->render('index/tuicss.html.twig', [
+            'controller_name' => 'IndexController',
+        ]);
+    }
+    
 }

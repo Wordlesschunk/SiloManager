@@ -6,4 +6,7 @@
  */
 import './styles/app.css';
 
+import 'tuicss/dist/tuicss.min.css';
+import 'tuicss'
+
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
