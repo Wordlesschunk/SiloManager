@@ -1,0 +1,171 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper {
+      margin: 1em auto;
+      /*max-width: 800px;*/
+      width: 100%;
+      font: 18px/1.5 sans-serif;
+      overflow-x: hidden;
+    }
+</style>
+
+<div class="example-wrapper">
+{#    <h1>Hello {{ controller_name }}! ✅</h1>#}
+
+    <pre class="ascii-art">
+    ███████╗██╗██╗      ██████╗     ███╗   ███╗ █████╗ ███╗   ██╗ █████╗  ██████╗ ███████╗██████╗
+    ██╔════╝██║██║     ██╔═══██╗    ████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝ ██╔════╝██╔══██╗
+    ███████╗██║██║     ██║   ██║    ██╔████╔██║███████║██╔██╗ ██║███████║██║  ███╗█████╗  ██████╔╝
+    ╚════██║██║██║     ██║   ██║    ██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║██║   ██║██╔══╝  ██╔══██╗
+    ███████║██║███████╗╚██████╔╝    ██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║╚██████╔╝███████╗██║  ██║
+    ╚══════╝╚═╝╚══════╝ ╚═════╝     ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+    </pre>
+
+    <pre class="ascii-art">
+                                                                                                              v .   ._, |_  .,
+                                                                                                           `-._\/  .  \ /    |/_
+                                                                                                               \\  _\, y | \//
+                                                                                                         _\_.___\\, \\/ -.\||
+                                                                                                           `7-,--.`._||  / / ,
+                                                                                                           /'     `-. `./ / |/_.'
+                                                                                                                     |    |//
+                                                                                                                     |_    /
+                                                                                                                     |-   |
+                                                                                                                     |   =|
+                                                                                                                     |    |
+-------------.__________.----------------------------------------------------._______________.----------------------/ ,  . \--------.______________________.----------------------------------------.__________.---------------
+                                    |                     |
+                                    |       CONTROL       | <-- Top Command Center
+                                    | Status: Operational |
+                                    | Power: 98%          |
+                                    +---------------------+
+                                    |       FLOOR 10      | <-- Top Habitation Level
+                                    | Population: 120     |
+                                    | Oxygen: Stable      |
+                                    | Temp: 22°C          |
+                                    +---------------------+
+                                    |       FLOOR 9       |
+                                    | Population: 115     |
+                                    | Oxygen: Stable      |
+                                    | Temp: 21°C          |
+                                    +---------------------+
+                                    |       FLOOR 8       |
+                                    | Hydroponics: Active | <-- Farming/Hydroponics
+                                    | Yield: 320kg/wk     |
+                                    | Water: Normal       |
+                                    +---------------------+
+                                    |       FLOOR 7       |
+                                    | Storage: 75% Full   | <-- Storage
+                                    | Rations: 12,000     |
+                                    | Supplies: Adequate  |
+                                    +---------------------+
+                                    |       FLOOR 6       |
+                                    | Population: 100     | <-- Residential Levels
+                                    | Oxygen: Stable      |
+                                    | Temp: 20°C          |
+                                    +---------------------+
+                                    |       FLOOR 5       |
+                                    | Engineering: Active | <-- Maintenance
+                                    | Power: 92% Output   |
+                                    | Coolant: OK         |
+                                    +---------------------+
+                                    |       FLOOR 4       |
+                                    | Population: 85      |
+                                    | Oxygen: Stable      |
+                                    | Temp: 19°C          |
+                                    +---------------------+
+                                    |       FLOOR 3       |
+                                    | Medbay: Operational | <-- Medical Facilities
+                                    | Patients: 3         |
+                                    | Supplies: Low       |
+                                    +---------------------+
+                                    |       FLOOR 2       |
+                                    | Storage: 50% Full   | <-- Backup Supplies
+                                    | Rations: 5,000      |
+                                    | Supplies: Limited   |
+                                    +---------------------+
+                                    |       FLOOR 1       |
+                                    | Reactor: Stable     | <-- Energy Source
+                                    | Power: 98% Output   |
+                                    | Coolant: OK         |
+                                    +---------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+
+    <pre class="ascii-art">
+
+    +---------------------+
+    |       CONTROL       | <-- Top Command Center
+    | Status: Operational |
+    | Power: 98%          |
+    +---------------------+
+    |       FLOOR 10      | <-- Top Habitation Level
+    | Population: 120     |
+    | Oxygen: Stable      |
+    | Temp: 22°C          |
+    +---------------------+
+    |       FLOOR 9       |
+    | Population: 115     |
+    | Oxygen: Stable      |
+    | Temp: 21°C          |
+    +---------------------+
+    |       FLOOR 8       |
+    | Hydroponics: Active | <-- Farming/Hydroponics
+    | Yield: 320kg/wk     |
+    | Water: Normal       |
+    +---------------------+
+    |       FLOOR 7       |
+    | Storage: 75% Full   | <-- Storage
+    | Rations: 12,000     |
+    | Supplies: Adequate  |
+    +---------------------+
+    |       FLOOR 6       |
+    | Population: 100     | <-- Residential Levels
+    | Oxygen: Stable      |
+    | Temp: 20°C          |
+    +---------------------+
+    |       FLOOR 5       |
+    | Engineering: Active | <-- Maintenance
+    | Power: 92% Output   |
+    | Coolant: OK         |
+    +---------------------+
+    |       FLOOR 4       |
+    | Population: 85      |
+    | Oxygen: Stable      |
+    | Temp: 19°C          |
+    +---------------------+
+    |       FLOOR 3       |
+    | Medbay: Operational | <-- Medical Facilities
+    | Patients: 3         |
+    | Supplies: Low       |
+    +---------------------+
+    |       FLOOR 2       |
+    | Storage: 50% Full   | <-- Backup Supplies
+    | Rations: 5,000      |
+    | Supplies: Limited   |
+    +---------------------+
+    |       FLOOR 1       |
+    | Reactor: Stable     | <-- Energy Source
+    | Power: 98% Output   |
+    | Coolant: OK         |
+    +---------------------+
+     </pre>
+
+
+</div>
+{% endblock %}
