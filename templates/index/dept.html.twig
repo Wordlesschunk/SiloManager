@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper {
+      margin-left: 30px;
+      max-width: 800px;
+      width: 95%;
+      font: 18px/1.5 sans-serif;
+    }
+
+    .menu-bar {
+      display: flex;
+      justify-content: center; /* Centers the menu */
+      /*padding: 5px 0; !* Adds some vertical space *!*/
+    }
+
+    .menu-text {
+      font-family: monospace; /* Plain-text appearance */
+      white-space: nowrap; /* Prevents text from wrapping */
+      text-align: center;
+    }
+
+    .menu-text a {
+      text-decoration: none; /* Removes underline from links */
+      color: white; /* Default text color */
+      padding: 2px 5px; /* Adds padding for clickability */
+    }
+
+    .menu-text a.selected {
+      background-color: green; /* Highlight for the selected menu item */
+      color: white; /* Ensures the text is readable */
+      border-radius: 3px; /* Optional: Slightly rounded corners */
+    }
+
+    .menu-bar-underline {
+      height: 10px;
+      background-color: white;
+      margin-left: -23px;
+      margin-top: 5px;
+      width: 106%;
+    }
+
+</style>
+
+<div class="example-wrapper">
+
+    <nav class="menu-bar">
+        <div class="menu-text">
+            |    <a href="#system" class="selected">SYSTEM</a>    || <a href="#file">FILE</a> || <a href="#records">RECORDS</a> || <a href="#search">SEARCH</a> || <a href="#statements">STATEMENTS</a> || <a href="#warrants">WARRANTS</a> || <a href="#help">HELP</a> |
+        </div>
+    </nav>
+
+    <div class="menu-bar-underline"></div>
+
+    <input
+
+
+    <pre>
+        +----+---------------+-----+------------+
+        | ID | Name          | Age | Occupation |
+        +----+---------------+-----+------------+
+        | 1  | Alice Smith   | 30  | Engineer   |
+        | 2  | Bob Johnson   | 45  | Teacher    |
+        | 3  | Charlie Brown | 28  | Designer   |
+        | 4  | Dana White    | 35  | Developer  |
+        +----+---------------+-----+------------+
+    </pre>
+
+</div>
+{% endblock %}

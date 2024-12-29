@@ -33,4 +33,13 @@ class IndexController extends AbstractController
             'controller_name' => 'IndexController',
         ]);
     }
+    
+    #[Route('/dept', name: 'app_render_menu_sheriff')]
+    public function renderSheriffDept(): Response
+    {
+        return $this->render('index/dept.html.twig', [
+            'controller_name' => 'IndexController',
+        ]);
+    }
+    
 }
