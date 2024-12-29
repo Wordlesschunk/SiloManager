@@ -26,10 +26,10 @@ class IndexController extends AbstractController
         ]);
     }
     
-    #[Route('/back', name: 'app_render_silo_back')]
-    public function renderBack(): Response
+    #[Route('/menu', name: 'app_render_menu')]
+    public function renderMenu(): Response
     {
-        return $this->render('index/backdrop.html.twig', [
+        return $this->render('index/menu.html.twig', [
             'controller_name' => 'IndexController',
         ]);
     }
